@@ -10,7 +10,6 @@ export default defineConfig(({ command }) => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, 'src'),
-        'slim-select': path.resolve(__dirname, 'node_modules/slim-select'),
         izitoast: path.resolve(__dirname, 'node_modules/izitoast'),
       },
     },

@@ -6,7 +6,6 @@ import { fetchBreeds, fetchCatByBreed } from '@/service/cat-api';
 import { setVisibleElement } from './helpers';
 import { refs } from './refs';
 
-import 'slim-select/dist/slimselect.css';
 import 'izitoast/dist/css/iziToast.min.css';
 
 const onLoad = () => {

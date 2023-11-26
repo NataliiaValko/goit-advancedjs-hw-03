@@ -1,10 +1,19 @@
 import { defineConfig } from 'vite';
+import path from 'path';
+
 import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig(({ command }) => {
   return {
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, 'src'),
+        'slim-select': path.resolve(__dirname, 'node_modules/slim-select'),
+        izitoast: path.resolve(__dirname, 'node_modules/izitoast'),
+      },
+    },
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },

@@ -9,5 +9,3 @@ export const fetchCatByBreed = breedId => {
     res => res.data[0]
   );
 };
-
-// назва породи, опис і темперамент.

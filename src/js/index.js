@@ -1,13 +1,13 @@
 import SlimSelect from 'slim-select';
 import iziToast from 'izitoast';
 
-import { makeOptionsMarkup, makeCatInfoMarkup } from '../service/markupService';
-import { fetchBreeds, fetchCatByBreed } from '../service/cat-api';
+import { makeOptionsMarkup, makeCatInfoMarkup } from '@/service/markupService';
+import { fetchBreeds, fetchCatByBreed } from '@/service/cat-api';
 import { setVisibleElement } from './helpers';
 import { refs } from './refs';
 
-import '../../node_modules/slim-select/dist/slimselect.css';
-import '../../node_modules/izitoast/dist/css/iziToast.min.css';
+import 'slim-select/dist/slimselect.css';
+import 'izitoast/dist/css/iziToast.min.css';
 
 const onLoad = () => {
   setVisibleElement({ bool: true, element: refs.loaderRef });

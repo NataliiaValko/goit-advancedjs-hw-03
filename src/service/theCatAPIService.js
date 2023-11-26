@@ -8,6 +8,3 @@ export const theCatAPI = axios.create({
   baseURL: BASE_URL,
   headers: { 'x-api-key': API_KEY },
 });
-
-// axios.defaults.baseURL = BASE_URL;
-// axios.defaults.headers.common['x-api-key'] = API_KEY;

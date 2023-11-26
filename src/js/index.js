@@ -33,7 +33,6 @@ const onLoad = () => {
 };
 
 const onChangeBreedsSelect = ({ target: { value } }) => {
-  //   setVisibleElement({ bool: false, element: refs.errorRef });
   setVisibleElement({ bool: true, element: refs.loaderRef });
   refs.catInfoRef.innerHTML = '';
   fetchCatByBreed(value)
